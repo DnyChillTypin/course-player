@@ -1,0 +1,1570 @@
+{
+ "title": "Data Governance & AI Governance - The Complete Guide",
+ "modules": [
+  {
+   "name": "Welcome",
+   "lessons": [
+    {
+     "name": "Discovering the Course Framework and Real-World Context",
+     "items": [
+      {
+       "name": "Welcome and getting to know your lecturer",
+       "type": "Lecture",
+       "id": "iXBqQ",
+       "video": "01@welcome/01@discovering-the-course-framework-and-rea/01@welcome-and-getting-to-know-your-lecture/01@.mp4",
+       "srt": "01@welcome/01@discovering-the-course-framework-and-rea/01@welcome-and-getting-to-know-your-lecture/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Course Structure and Learning Objectives",
+       "type": "Lecture",
+       "id": "gXcwT",
+       "video": "01@welcome/01@discovering-the-course-framework-and-rea/02@course-structure-and-learning-objectives/01@.mp4",
+       "srt": "01@welcome/01@discovering-the-course-framework-and-rea/02@course-structure-and-learning-objectives/01@.srt",
+       "other": []
+      },
+      {
+       "name": "EasyCar Case Study Introduction",
+       "type": "Lecture",
+       "id": "ugPNz",
+       "video": "01@welcome/01@discovering-the-course-framework-and-rea/03@easycar-case-study-introduction/01@.mp4",
+       "srt": "01@welcome/01@discovering-the-course-framework-and-rea/03@easycar-case-study-introduction/01@.srt",
+       "other": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Foundations of Data Governance",
+   "lessons": [
+    {
+     "name": "Mastering Data Governance: From Core Principles to Real-World Applications",
+     "items": [
+      {
+       "name": "Foundations of Data Governance",
+       "type": "Lecture",
+       "id": "lBybk",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/01@foundations-of-data-governance/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/01@foundations-of-data-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Why Governance Now?",
+       "type": "Lecture",
+       "id": "B1oZE",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/02@why-governance-now/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/02@why-governance-now/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Outcomes and Anti-Patterns",
+       "type": "Lecture",
+       "id": "jzunv",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/03@outcomes-and-anti-patterns/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/03@outcomes-and-anti-patterns/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Key Concepts (Cheat Sheet)",
+       "type": "Lecture",
+       "id": "VgaBf",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/04@key-concepts-cheat-sheet/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/04@key-concepts-cheat-sheet/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Scope Boundaries & Next Modules",
+       "type": "Lecture",
+       "id": "E2PCM",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/05@scope-boundaries-next-modules/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/05@scope-boundaries-next-modules/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Governance Across the Data Lifecycle",
+       "type": "Lecture",
+       "id": "SnRsN",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/06@governance-across-the-data-lifecycle/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/06@governance-across-the-data-lifecycle/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Metadata, Catalog, and Business Glossary",
+       "type": "Lecture",
+       "id": "Tu5WX",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/07@metadata-catalog-and-business-glossary/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/07@metadata-catalog-and-business-glossary/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Data Quality Essentials",
+       "type": "Lecture",
+       "id": "XjOwQ",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/08@data-quality-essentials/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/08@data-quality-essentials/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Privacy & Security Touchpoints",
+       "type": "Lecture",
+       "id": "AMfuP",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/09@privacy-security-touchpoints/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/09@privacy-security-touchpoints/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Frameworks you should know",
+       "type": "Lecture",
+       "id": "wWVKE",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/10@frameworks-you-should-know/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/10@frameworks-you-should-know/01@.srt",
+       "other": []
+      },
+      {
+       "name": "What Changes with AI?",
+       "type": "Lecture",
+       "id": "ut4vQ",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/11@what-changes-with-ai/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/11@what-changes-with-ai/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Governance at a Glance",
+       "type": "Lecture",
+       "id": "wrYqM",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/12@ai-governance-at-a-glance/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/12@ai-governance-at-a-glance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Data Governance vs AI Governance Artifacts",
+       "type": "Lecture",
+       "id": "5JzKC",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/13@data-governance-vs-ai-governance-artifac/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/13@data-governance-vs-ai-governance-artifac/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Case Vignette: EasyCar Customer Support RAG Chatbot",
+       "type": "Lecture",
+       "id": "3jZWb",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/14@case-vignette-easycar-customer-support-r/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/14@case-vignette-easycar-customer-support-r/01@.srt",
+       "other": []
+      },
+      {
+       "name": "KPIs & Providing Value",
+       "type": "Lecture",
+       "id": "7cPCx",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/15@kpis-providing-value/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/15@kpis-providing-value/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Module Deliverable: Governance Charter",
+       "type": "Lecture",
+       "id": "4MM7o",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/16@module-deliverable-governance-charter/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/16@module-deliverable-governance-charter/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise - Introduction",
+       "type": "Lecture",
+       "id": "BXI5C",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/17@exercise-introduction/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/17@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise - Walk-through sample solution",
+       "type": "Lecture",
+       "id": "bZvYH",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/18@exercise-walk-through-sample-solution/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/18@exercise-walk-through-sample-solution/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Template explanation",
+       "type": "Lecture",
+       "id": "cXz23",
+       "video": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/19@template-explanation/01@.mp4",
+       "srt": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/19@template-explanation/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Foundations and Practices in Data Governance and AI",
+       "type": "Quiz",
+       "id": "LXK75",
+       "html": "02@foundations-of-data-governance/01@mastering-data-governance-from-core-prin/20@foundations-and-practices-in-data-govern/01@foundations-and-practices-in-data-govern.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Operating Model & Roles (Decision Rights & RACI)",
+   "lessons": [
+    {
+     "name": "Designing and Implementing a Robust Data Governance Framework",
+     "items": [
+      {
+       "name": "Module Boundaries",
+       "type": "Lecture",
+       "id": "411DJ",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/01@module-boundaries/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/01@module-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Module Deliverables",
+       "type": "Lecture",
+       "id": "c89IU",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/02@module-deliverables/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/02@module-deliverables/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Operating Model Patterns",
+       "type": "Lecture",
+       "id": "DQB0L",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/03@operating-model-patterns/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/03@operating-model-patterns/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Trade-Off Dimensions (and Anti-Patterns)",
+       "type": "Lecture",
+       "id": "KTvjZ",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/04@trade-off-dimensions-and-anti-patterns/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/04@trade-off-dimensions-and-anti-patterns/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Decision Rights (What decisions exist?)",
+       "type": "Lecture",
+       "id": "rkUpl",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/05@decision-rights-what-decisions-exist/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/05@decision-rights-what-decisions-exist/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Roles",
+       "type": "Lecture",
+       "id": "nVzNi",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/06@roles/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/06@roles/01@.srt",
+       "other": []
+      },
+      {
+       "name": "RACI by Scenario",
+       "type": "Lecture",
+       "id": "pJNII",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/07@raci-by-scenario/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/07@raci-by-scenario/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Councils & Forums (Where Decisions happen)",
+       "type": "Lecture",
+       "id": "PXH7o",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/08@councils-forums-where-decisions-happen/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/08@councils-forums-where-decisions-happen/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Escalations & Exceptions",
+       "type": "Lecture",
+       "id": "92Jod",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/09@escalations-exceptions/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/09@escalations-exceptions/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Domains & Data Products",
+       "type": "Lecture",
+       "id": "2lVVa",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/10@domains-data-products/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/10@domains-data-products/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Cadence & Core Artifacts",
+       "type": "Lecture",
+       "id": "f1Tx4",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/11@cadence-core-artifacts/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/11@cadence-core-artifacts/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Enablement & Change",
+       "type": "Lecture",
+       "id": "hXCuz",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/12@enablement-change/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/12@enablement-change/01@.srt",
+       "other": []
+      },
+      {
+       "name": "KPIs for the Operating Model",
+       "type": "Lecture",
+       "id": "HJZHI",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/13@kpis-for-the-operating-model/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/13@kpis-for-the-operating-model/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Governance Scorecard",
+       "type": "Lecture",
+       "id": "x0nnz",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/14@governance-scorecard/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/14@governance-scorecard/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Implementation Roadmap",
+       "type": "Lecture",
+       "id": "QZW9r",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/15@implementation-roadmap/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/15@implementation-roadmap/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Governance Tie-Ins",
+       "type": "Lecture",
+       "id": "2CdBa",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/16@ai-governance-tie-ins/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/16@ai-governance-tie-ins/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "xnSjt",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/17@exercise-introduction/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/17@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Solution walk-through",
+       "type": "Lecture",
+       "id": "UG2nv",
+       "video": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/18@solution-walk-through/01@.mp4",
+       "srt": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/18@solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Data Governance Foundations and Practice",
+       "type": "Quiz",
+       "id": "LDJ9z",
+       "html": "03@operating-model-roles-decision-rights-ra/01@designing-and-implementing-a-robust-data/19@data-governance-foundations-and-practice/01@data-governance-foundations-and-practice.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Policies, Standards, and Controls",
+   "lessons": [
+    {
+     "name": "Mastering Data Governance: From Policy Creation to Practical Implementation",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "XMiuJ",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/01@scope-boundaries/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Policy Hierarchy & Traceability",
+       "type": "Lecture",
+       "id": "ojbzs",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/02@policy-hierarchy-traceability/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/02@policy-hierarchy-traceability/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Writing Good Policies (and Avoiding bad ones)",
+       "type": "Lecture",
+       "id": "IYfSi",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/03@writing-good-policies-and-avoiding-bad-o/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/03@writing-good-policies-and-avoiding-bad-o/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Standards & Procedures",
+       "type": "Lecture",
+       "id": "P4jT2",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/04@standards-procedures/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/04@standards-procedures/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Control Taxonomy",
+       "type": "Lecture",
+       "id": "HZtf3",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/05@control-taxonomy/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/05@control-taxonomy/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Evidence & Assurance",
+       "type": "Lecture",
+       "id": "GGllW",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/06@evidence-assurance/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/06@evidence-assurance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exceptions & Risk Acceptance",
+       "type": "Lecture",
+       "id": "OvXue",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/07@exceptions-risk-acceptance/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/07@exceptions-risk-acceptance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Mapping to Frameworks",
+       "type": "Lecture",
+       "id": "f0yEI",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/08@mapping-to-frameworks/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/08@mapping-to-frameworks/01@.srt",
+       "other": []
+      },
+      {
+       "name": "EasyCar Case Vignette",
+       "type": "Lecture",
+       "id": "AHYad",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/09@easycar-case-vignette/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/09@easycar-case-vignette/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Module Deliverables",
+       "type": "Lecture",
+       "id": "mFjNl",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/10@module-deliverables/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/10@module-deliverables/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "KUIBD",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/11@exercise-introduction/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/11@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Solution walk-through",
+       "type": "Lecture",
+       "id": "EuUT4",
+       "video": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/12@solution-walk-through/01@.mp4",
+       "srt": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/12@solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Foundations of Governance Policies and Controls",
+       "type": "Quiz",
+       "id": "ieqyM",
+       "html": "04@policies-standards-and-controls/01@mastering-data-governance-from-policy-cr/13@foundations-of-governance-policies-and-c/01@foundations-of-governance-policies-and-c.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Metadata, Catalog, and Business Glossary",
+   "lessons": [
+    {
+     "name": "Mastering Metadata and Governance Practices",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "UNDzx",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/01@scope-boundaries/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Why Metadata Matters",
+       "type": "Lecture",
+       "id": "hC0UD",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/02@why-metadata-matters/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/02@why-metadata-matters/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Business vs. Technical Metadata",
+       "type": "Lecture",
+       "id": "GXdED",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/03@business-vs-technical-metadata/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/03@business-vs-technical-metadata/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Glossary Lifecycle",
+       "type": "Lecture",
+       "id": "m6A9B",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/04@glossary-lifecycle/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/04@glossary-lifecycle/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Catalog Operating Procedures",
+       "type": "Lecture",
+       "id": "9SG2Z",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/05@catalog-operating-procedures/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/05@catalog-operating-procedures/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Naming and Classification Standards",
+       "type": "Lecture",
+       "id": "aiHDo",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/06@naming-and-classification-standards/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/06@naming-and-classification-standards/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Integration with Data Quality and Lineage",
+       "type": "Lecture",
+       "id": "TcgkF",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/07@integration-with-data-quality-and-lineag/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/07@integration-with-data-quality-and-lineag/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Activity & Deliverables",
+       "type": "Lecture",
+       "id": "T9MLY",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/08@activity-deliverables/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/08@activity-deliverables/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "x144k",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/09@exercise-introduction/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "nJc2G",
+       "video": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/10@sample-solution-walk-through/01@.mp4",
+       "srt": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Data Catalog Fundamentals and Business Glossary",
+       "type": "Quiz",
+       "id": "IIRMA",
+       "html": "05@metadata-catalog-and-business-glossary/01@mastering-metadata-and-governance-practi/11@data-catalog-fundamentals-and-business-g/01@data-catalog-fundamentals-and-business-g.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Data Quality & Master Data",
+   "lessons": [
+    {
+     "name": "Mastering Data Quality: From Governance to Implementation",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "cpXok",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/01@scope-boundaries/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Data Quality Dimensions & How to measure",
+       "type": "Lecture",
+       "id": "B7VZu",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/02@data-quality-dimensions-how-to-measure/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/02@data-quality-dimensions-how-to-measure/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Rule design & SLAs",
+       "type": "Lecture",
+       "id": "q4Nf0",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/03@rule-design-slas/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/03@rule-design-slas/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Ownership & Workflows",
+       "type": "Lecture",
+       "id": "dzksm",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/04@ownership-workflows/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/04@ownership-workflows/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Issue Management & Remediation lifecycle",
+       "type": "Lecture",
+       "id": "8nv0d",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/05@issue-management-remediation-lifecycle/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/05@issue-management-remediation-lifecycle/01@.srt",
+       "other": []
+      },
+      {
+       "name": "MDM & Reference Data Governance",
+       "type": "Lecture",
+       "id": "MiqHJ",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/06@mdm-reference-data-governance/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/06@mdm-reference-data-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Monitoring & Reporting",
+       "type": "Lecture",
+       "id": "EaKvj",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/07@monitoring-reporting/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/07@monitoring-reporting/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Activity & Deliverables",
+       "type": "Lecture",
+       "id": "ciQBY",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/08@activity-deliverables/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/08@activity-deliverables/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction & sample solution",
+       "type": "Lecture",
+       "id": "Jygse",
+       "video": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/09@exercise-introduction-sample-solution/01@.mp4",
+       "srt": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/09@exercise-introduction-sample-solution/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Operational Data Quality Practices",
+       "type": "Quiz",
+       "id": "r7Bh9",
+       "html": "06@data-quality-master-data/01@mastering-data-quality-from-governance-t/10@operational-data-quality-practices/01@operational-data-quality-practices.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Privacy & Security",
+   "lessons": [
+    {
+     "name": "Mastering Data Governance: From Classification to Compliance",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "oiKsG",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/01@scope-boundaries/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Data Classification (Levels, Labels & Tags)",
+       "type": "Lecture",
+       "id": "7Schg",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/02@data-classification-levels-labels-tags/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/02@data-classification-levels-labels-tags/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Handling Standards",
+       "type": "Lecture",
+       "id": "P3PN9",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/03@handling-standards/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/03@handling-standards/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Access Governance",
+       "type": "Lecture",
+       "id": "eYIoc",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/04@access-governance/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/04@access-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "DPIA, PIA and RoPA",
+       "type": "Lecture",
+       "id": "mjjgN",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/05@dpia-pia-and-ropa/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/05@dpia-pia-and-ropa/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Retention & Deletion",
+       "type": "Lecture",
+       "id": "XLHQT",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/06@retention-deletion/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/06@retention-deletion/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Evidence and Audits",
+       "type": "Lecture",
+       "id": "2fbGr",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/07@evidence-and-audits/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/07@evidence-and-audits/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Mini-lab: Apply the Guardrails to a dataset",
+       "type": "Lecture",
+       "id": "U2LI4",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/08@mini-lab-apply-the-guardrails-to-a-datas/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/08@mini-lab-apply-the-guardrails-to-a-datas/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "T6koL",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/09@exercise-introduction/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "uX4go",
+       "video": "07@privacy-security/01@mastering-data-governance-from-classific/10@sample-solution-walk-through/01@.mp4",
+       "srt": "07@privacy-security/01@mastering-data-governance-from-classific/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Foundational Practices in Data Governance and Privacy",
+       "type": "Quiz",
+       "id": "84pBL",
+       "html": "07@privacy-security/01@mastering-data-governance-from-classific/11@foundational-practices-in-data-governanc/01@foundational-practices-in-data-governanc.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Lifecycle and Lineage",
+   "lessons": [
+    {
+     "name": "Navigating Data Lifecycle and Lineage in Governance",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "jd6d0",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/01@scope-boundaries/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Lifecycle Overview - Stages",
+       "type": "Lecture",
+       "id": "YIEsU",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/02@lifecycle-overview-stages/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/02@lifecycle-overview-stages/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Lifecycle Control Points",
+       "type": "Lecture",
+       "id": "9WXRN",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/03@lifecycle-control-points/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/03@lifecycle-control-points/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Lineage Fundamentals",
+       "type": "Lecture",
+       "id": "QkuJC",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/04@lineage-fundamentals/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/04@lineage-fundamentals/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Capturing Lineage",
+       "type": "Lecture",
+       "id": "oPDz9",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/05@capturing-lineage/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/05@capturing-lineage/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Using Lineage",
+       "type": "Lecture",
+       "id": "70SwV",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/06@using-lineage/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/06@using-lineage/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Evidence and Integration",
+       "type": "Lecture",
+       "id": "wrtS0",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/07@evidence-and-integration/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/07@evidence-and-integration/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Mini-lab: Document Lifecycle and Lineage for One Data Product",
+       "type": "Lecture",
+       "id": "nn4m6",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/08@mini-lab-document-lifecycle-and-lineage-/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/08@mini-lab-document-lifecycle-and-lineage-/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "SS5pI",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/09@exercise-introduction/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "VEdbU",
+       "video": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/10@sample-solution-walk-through/01@.mp4",
+       "srt": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Life Cycle and Lineage in Data Products",
+       "type": "Quiz",
+       "id": "bZ4bg",
+       "html": "08@lifecycle-and-lineage/01@navigating-data-lifecycle-and-lineage-in/11@life-cycle-and-lineage-in-data-products/01@life-cycle-and-lineage-in-data-products.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "AI Governance Fundamentals",
+   "lessons": [
+    {
+     "name": "Building a Responsible AI Governance Framework",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "P4UMS",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/01@scope-boundaries/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Why AI Governance",
+       "type": "Lecture",
+       "id": "hmMCR",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/02@why-ai-governance/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/02@why-ai-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Principles and values",
+       "type": "Lecture",
+       "id": "nXEbo",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/03@principles-and-values/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/03@principles-and-values/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Roles and forums",
+       "type": "Lecture",
+       "id": "hN8pT",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/04@roles-and-forums/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/04@roles-and-forums/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Frameworks Overview",
+       "type": "Lecture",
+       "id": "0YE1D",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/05@frameworks-overview/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/05@frameworks-overview/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Core artifacts and processes",
+       "type": "Lecture",
+       "id": "YG6QE",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/06@core-artifacts-and-processes/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/06@core-artifacts-and-processes/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Evidence and accountability",
+       "type": "Lecture",
+       "id": "ITwIS",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/07@evidence-and-accountability/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/07@evidence-and-accountability/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Activity: AI Governance Charter Addendum",
+       "type": "Lecture",
+       "id": "IkHeP",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/08@activity-ai-governance-charter-addendum/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/08@activity-ai-governance-charter-addendum/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "bVmY8",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/09@exercise-introduction/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "9SrUE",
+       "video": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/10@sample-solution-walk-through/01@.mp4",
+       "srt": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Governance in Practice",
+       "type": "Quiz",
+       "id": "XIJMB",
+       "html": "09@ai-governance-fundamentals/01@building-a-responsible-ai-governance-fra/11@ai-governance-in-practice/01@ai-governance-in-practice.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Responsible AI",
+   "lessons": [
+    {
+     "name": "Building Trust Through Ethical AI Practices",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "p0EvV",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/01@scope-boundaries/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Risk Taxonomy",
+       "type": "Lecture",
+       "id": "IcW6W",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/02@ai-risk-taxonomy/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/02@ai-risk-taxonomy/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Risk Scoring",
+       "type": "Lecture",
+       "id": "xcXQi",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/03@risk-scoring/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/03@risk-scoring/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Impact Assessment",
+       "type": "Lecture",
+       "id": "yLm7K",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/04@ai-impact-assessment/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/04@ai-impact-assessment/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Model Card and Data Card",
+       "type": "Lecture",
+       "id": "5gchc",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/05@model-card-and-data-card/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/05@model-card-and-data-card/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Human Oversight and Transparency",
+       "type": "Lecture",
+       "id": "0c7ul",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/06@human-oversight-and-transparency/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/06@human-oversight-and-transparency/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Risk Register and Tracking",
+       "type": "Lecture",
+       "id": "GBvTw",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/07@risk-register-and-tracking/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/07@risk-register-and-tracking/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Activity: Draft AIA + Card Skeletons",
+       "type": "Lecture",
+       "id": "oqt6o",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/08@activity-draft-aia-card-skeletons/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/08@activity-draft-aia-card-skeletons/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "QQEWV",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/09@exercise-introduction/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "Qq6Xb",
+       "video": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/10@sample-solution-walk-through/01@.mp4",
+       "srt": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Foundations of AI Governance in Operational Settings",
+       "type": "Quiz",
+       "id": "ozH4H",
+       "html": "10@responsible-ai/01@building-trust-through-ethical-ai-practi/11@foundations-of-ai-governance-in-operatio/01@foundations-of-ai-governance-in-operatio.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Machine Learning Lifecycle",
+   "lessons": [
+    {
+     "name": "Mastering the End-to-End Machine Learning Lifecycle",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "Atd0U",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/01@scope-boundaries/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "ML Lifecycle Stages",
+       "type": "Lecture",
+       "id": "lKyVr",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/02@ml-lifecycle-stages/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/02@ml-lifecycle-stages/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Reproducibility & Traceability",
+       "type": "Lecture",
+       "id": "yJIMR",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/03@reproducibility-traceability/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/03@reproducibility-traceability/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Model Registry & Inventory",
+       "type": "Lecture",
+       "id": "e6MlT",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/04@model-registry-inventory/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/04@model-registry-inventory/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Promotion Workflow & Approval Gates",
+       "type": "Lecture",
+       "id": "cLlnG",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/05@promotion-workflow-approval-gates/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/05@promotion-workflow-approval-gates/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Evaluation as a Control",
+       "type": "Lecture",
+       "id": "INsQU",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/06@evaluation-as-a-control/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/06@evaluation-as-a-control/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Monitoring, Incidents, and Retirement",
+       "type": "Lecture",
+       "id": "8D7Bs",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/07@monitoring-incidents-and-retirement/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/07@monitoring-incidents-and-retirement/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Governance Interfaces",
+       "type": "Lecture",
+       "id": "hMaPf",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/08@ai-governance-interfaces/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/08@ai-governance-interfaces/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Activity",
+       "type": "Lecture",
+       "id": "VaDpC",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/09@activity/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/09@activity/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "w2WL0",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/10@exercise-introduction/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/10@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "hshaS",
+       "video": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/11@sample-solution-walk-through/01@.mp4",
+       "srt": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/11@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Key Principles of Machine Learning Life Cycle Governance",
+       "type": "Quiz",
+       "id": "Kdo8e",
+       "html": "11@machine-learning-lifecycle/01@mastering-the-end-to-end-machine-learnin/12@key-principles-of-machine-learning-life-/01@key-principles-of-machine-learning-life-.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "GenAI & Large Language Models (LLM)",
+   "lessons": [
+    {
+     "name": "Mastering Governance in Generative AI Systems",
+     "items": [
+      {
+       "name": "Scope",
+       "type": "Lecture",
+       "id": "Dtux5",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/01@scope/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/01@scope/01@.srt",
+       "other": []
+      },
+      {
+       "name": "GenAI System Patterns",
+       "type": "Lecture",
+       "id": "5cevw",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/02@genai-system-patterns/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/02@genai-system-patterns/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Data Governance for RAG Corpora",
+       "type": "Lecture",
+       "id": "AbpoS",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/03@data-governance-for-rag-corpora/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/03@data-governance-for-rag-corpora/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Prompt & Context Governance",
+       "type": "Lecture",
+       "id": "eWZn8",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/04@prompt-context-governance/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/04@prompt-context-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Output Governance & Safety Controls",
+       "type": "Lecture",
+       "id": "zcyA9",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/05@output-governance-safety-controls/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/05@output-governance-safety-controls/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Logging & Privacy",
+       "type": "Lecture",
+       "id": "cCez3",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/06@logging-privacy/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/06@logging-privacy/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Evaluation & Acceptance Criteria",
+       "type": "Lecture",
+       "id": "US59d",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/07@evaluation-acceptance-criteria/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/07@evaluation-acceptance-criteria/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Incident Scenarios",
+       "type": "Lecture",
+       "id": "5nVKP",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/08@incident-scenarios/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/08@incident-scenarios/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Activity",
+       "type": "Lecture",
+       "id": "wfMhB",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/09@activity/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/09@activity/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "nTrjj",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/10@exercise-introduction/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/10@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "JHkyT",
+       "video": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/11@sample-solution-walk-through/01@.mp4",
+       "srt": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/11@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Generative AI Governance and Corpus Policy Design",
+       "type": "Quiz",
+       "id": "zya9X",
+       "html": "12@genai-large-language-models-llm/01@mastering-governance-in-generative-ai-sy/12@generative-ai-governance-and-corpus-poli/01@generative-ai-governance-and-corpus-poli.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "AI Data Quality",
+   "lessons": [
+    {
+     "name": "Mastering the Foundations of Ethical AI Data Quality",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "RtDDX",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/01@scope-boundaries/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "What's Different in AI Data Quality?",
+       "type": "Lecture",
+       "id": "CLgGN",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/02@whats-different-in-ai-data-quality/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/02@whats-different-in-ai-data-quality/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Dataset Representativeness",
+       "type": "Lecture",
+       "id": "V1lfS",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/03@dataset-representativeness/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/03@dataset-representativeness/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Labeling Governance",
+       "type": "Lecture",
+       "id": "boUVe",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/04@labeling-governance/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/04@labeling-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Fairness & Bias Checks",
+       "type": "Lecture",
+       "id": "hkIKc",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/05@fairness-bias-checks/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/05@fairness-bias-checks/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Drift Monitoring",
+       "type": "Lecture",
+       "id": "cCOi7",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/06@drift-monitoring/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/06@drift-monitoring/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Robustness & Stress Testing",
+       "type": "Lecture",
+       "id": "nsEW4",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/07@robustness-stress-testing/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/07@robustness-stress-testing/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Monitoring Governance",
+       "type": "Lecture",
+       "id": "NH4oD",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/08@monitoring-governance/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/08@monitoring-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "u4SiO",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/09@exercise-introduction/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "6IjVw",
+       "video": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/10@sample-solution-walk-through/01@.mp4",
+       "srt": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Data Quality, Drift, and Fairness Controls",
+       "type": "Quiz",
+       "id": "74xsd",
+       "html": "13@ai-data-quality/01@mastering-the-foundations-of-ethical-ai-/11@ai-data-quality-drift-and-fairness-contr/01@ai-data-quality-drift-and-fairness-contr.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Monitoring, Incidents, and Responsible Operations",
+   "lessons": [
+    {
+     "name": "Mastering Incident Response and Operational Governance",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "XzAIw",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/01@scope-boundaries/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Monitoring Layers",
+       "type": "Lecture",
+       "id": "SHP3d",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/02@monitoring-layers/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/02@monitoring-layers/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Alerting & Triage",
+       "type": "Lecture",
+       "id": "Ivmma",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/03@alerting-triage/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/03@alerting-triage/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Incident Taxonomy",
+       "type": "Lecture",
+       "id": "f9cKy",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/04@incident-taxonomy/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/04@incident-taxonomy/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Incident Response Runbook",
+       "type": "Lecture",
+       "id": "KHlXc",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/05@incident-response-runbook/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/05@incident-response-runbook/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Evidence & Audit Readiness",
+       "type": "Lecture",
+       "id": "GuL7H",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/06@evidence-audit-readiness/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/06@evidence-audit-readiness/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Post Incident Reviews",
+       "type": "Lecture",
+       "id": "8mg29",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/07@post-incident-reviews/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/07@post-incident-reviews/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Operating Cadence",
+       "type": "Lecture",
+       "id": "L29vv",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/08@operating-cadence/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/08@operating-cadence/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "QsN5p",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/09@exercise-introduction/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "xJXMj",
+       "video": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/10@sample-solution-walk-through/01@.mp4",
+       "srt": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Effective Incident Management for AI Systems",
+       "type": "Quiz",
+       "id": "IcxkS",
+       "html": "14@monitoring-incidents-and-responsible-ope/01@mastering-incident-response-and-operatio/11@effective-incident-management-for-ai-sys/01@effective-incident-management-for-ai-sys.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Tooling Architecture",
+   "lessons": [
+    {
+     "name": "Designing Governance Tooling for AI Systems",
+     "items": [
+      {
+       "name": "Scope Boundaries",
+       "type": "Lecture",
+       "id": "MbBan",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/01@scope-boundaries/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/01@scope-boundaries/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Capability Map",
+       "type": "Lecture",
+       "id": "Azd1D",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/02@capability-map/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/02@capability-map/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Reference Architecture",
+       "type": "Lecture",
+       "id": "1Zrhk",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/03@reference-architecture/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/03@reference-architecture/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Integration Patterns",
+       "type": "Lecture",
+       "id": "uENqZ",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/04@integration-patterns/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/04@integration-patterns/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Policy as Code, Control as Code",
+       "type": "Lecture",
+       "id": "pRdds",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/05@policy-as-code-control-as-code/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/05@policy-as-code-control-as-code/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Observability and Governance",
+       "type": "Lecture",
+       "id": "qeSJb",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/06@observability-and-governance/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/06@observability-and-governance/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Build vs Buy",
+       "type": "Lecture",
+       "id": "qFWP4",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/07@build-vs-buy/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/07@build-vs-buy/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Operating the Tooling",
+       "type": "Lecture",
+       "id": "EdhYh",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/08@operating-the-tooling/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/08@operating-the-tooling/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Exercise introduction",
+       "type": "Lecture",
+       "id": "3aOyU",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/09@exercise-introduction/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/09@exercise-introduction/01@.srt",
+       "other": []
+      },
+      {
+       "name": "Sample solution walk-through",
+       "type": "Lecture",
+       "id": "YFmzM",
+       "video": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/10@sample-solution-walk-through/01@.mp4",
+       "srt": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/10@sample-solution-walk-through/01@.srt",
+       "other": []
+      },
+      {
+       "name": "AI Governance Platform Capabilities and Operating Models",
+       "type": "Quiz",
+       "id": "SFAWG",
+       "html": "15@tooling-architecture/01@designing-governance-tooling-for-ai-syst/11@ai-governance-platform-capabilities-and-/01@ai-governance-platform-capabilities-and-.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Conclusion",
+   "lessons": [
+    {
+     "name": "Wrapping Up: Reflecting on Key Takeaways and Gratitude",
+     "items": [
+      {
+       "name": "Conclusion & Thank You!",
+       "type": "Lecture",
+       "id": "XasUH",
+       "video": "16@conclusion/01@wrapping-up-reflecting-on-key-takeaways-/01@conclusion-thank-you/01@.mp4",
+       "srt": "16@conclusion/01@wrapping-up-reflecting-on-key-takeaways-/01@conclusion-thank-you/01@.srt",
+       "other": []
+      },
+      {
+       "name": "The Data Governance & AI Governance - The Complete Guide Final Assessment",
+       "type": "Quiz",
+       "id": "C4Ukh",
+       "html": "16@conclusion/01@wrapping-up-reflecting-on-key-takeaways-/02@the-data-governance-ai-governance-the-co/01@the-data-governance-ai-governance-the-co.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "references": [
+  "references/01@full-course-resource.html"
+ ]
+}

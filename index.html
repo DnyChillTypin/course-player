@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Course Player</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%273%27 fill=%27%230056d2%27/%3E%3C/svg%3E">
+<style>
+:root{--blue:#0056d2;--bg:#fff;--fg:#1f1f1f;--mut:#5b5b5b;--line:#e0e0e0;--side:#f5f7f8;--act:#e8f0fe}
+@media(prefers-color-scheme:dark){:root{--bg:#121316;--fg:#ececec;--mut:#9a9fa6;--line:#2d3036;--side:#1a1c20;--act:#1d2b45;--blue:#6ea8ff}}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg);height:100vh;display:flex;flex-direction:column}
+header{display:flex;align-items:center;gap:16px;padding:10px 20px;border-bottom:1px solid var(--line)}
+header b{color:var(--blue);font-size:20px}header .t{flex:1;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{width:160px;height:8px;background:var(--line);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--blue)}
+small{color:var(--mut)}
+main{flex:1;display:flex;min-height:0}
+aside{width:340px;background:var(--side);border-right:1px solid var(--line);overflow:auto;flex:none}
+aside input{width:calc(100% - 24px);margin:12px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}
+details{border-bottom:1px solid var(--line)}summary{cursor:pointer;padding:12px 14px;font-weight:600}
+summary small{display:block;font-weight:400}
+.les{padding:6px 14px 2px 18px;font-size:12px;text-transform:uppercase;color:var(--mut);letter-spacing:.03em}
+.it{display:flex;gap:8px;padding:8px 14px 8px 18px;cursor:pointer;align-items:flex-start}
+.it:hover{background:var(--act)}.it.on{background:var(--act);border-left:3px solid var(--blue);padding-left:15px}
+.ck{width:16px;height:16px;border:2px solid var(--mut);border-radius:50%;flex:none;margin-top:3px;font-size:10px;line-height:12px;text-align:center;color:#fff}
+.it.done .ck{background:#1e8e3e;border-color:#1e8e3e}.it.done .ck:after{content:"\2713"}
+.it .ic{color:var(--mut);font-size:12px}
+section{flex:1;overflow:auto;padding:20px 28px}
+video{width:100%;max-height:70vh;background:#000;border-radius:8px}
+h2{margin:16px 0 4px}.ctl{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;align-items:center}
+button,select{padding:7px 14px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:6px;cursor:pointer;font:inherit}
+button.p{background:var(--blue);border-color:var(--blue);color:#fff}
+#tr{max-height:240px;overflow:auto;border:1px solid var(--line);border-radius:8px;padding:8px;position:relative}
+#tr div{padding:3px 8px;border-radius:4px;cursor:pointer}#tr div.on{background:var(--act)}#tr span{color:var(--mut);font-size:12px;margin-right:8px}
+iframe{width:100%;height:calc(100vh - 200px);border:1px solid var(--line);border-radius:8px;background:#fff}
+#hm{display:none;padding:4px 10px}.crumb{color:var(--mut);font-size:13px;margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:16px}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px;cursor:pointer;background:var(--side)}.card:hover{border-color:var(--blue)}
+.card b{display:block;margin-bottom:6px}.card .bar{width:100%;margin-top:8px}
+.hero{padding:8px 0 4px}.hero h1{margin:0 0 6px}
+@media(max-width:800px){#hm{display:block}header b{display:none}header .t{min-width:0}aside{display:none;position:absolute;z-index:5;top:53px;bottom:0;left:0;width:85%;max-width:340px}body.nav aside{display:block}section{padding:14px}}
+</style></head><body>
+<header><button id="hm" title="Toggle sidebar">&#9776;</button><b style="cursor:pointer" onclick="home()">Course</b><div class="t" id="title" style="cursor:pointer" onclick="home()"></div><small id="pt"></small><div class="bar"><i id="pb"></i></div></header>
+<main><aside><input id="q" placeholder="Search lectures..."><div id="nav"></div></aside><section id="view"></section></main>
+<script>
+const $=s=>document.querySelector(s),M='/media/',enc=p=>p.split('/').map(encodeURIComponent).join('/');
+let man,flat=[],cur=-1,done=JSON.parse(localStorage.done||'{}'),pos=JSON.parse(localStorage.pos||'{}');
+const save=()=>{localStorage.done=JSON.stringify(done);localStorage.pos=JSON.stringify(pos)};
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+fetch('manifest.json').then(r=>r.json()).then(m=>{man=m;$('#title').textContent=m.title;document.title=m.title;
+ let h='';m.modules.forEach((mod,mi)=>{h+=`<details data-m="${mi}"><summary>Module ${mi+1}: ${esc(mod.name)}<small class="mp"></small></summary>`;
+  mod.lessons.forEach(l=>{h+=`<div class="les">${esc(l.name)}</div>`;l.items.forEach(it=>{it.idx=flat.length;it.mod=mi;it.modName=mod.name;it.lesson=l.name;flat.push(it);
+   h+=`<div class="it" data-i="${it.idx}"><span class="ck"></span><span>${esc(it.name)}<br><span class="ic">${it.type=='Quiz'?'Quiz':'Video'}</span></span></div>`})});h+='</details>'});
+ if(m.references)h+=`<details><summary>Resources</summary>${m.references.map(r=>`<div class="it"><a href="${M+enc(r)}" target="_blank">Full course resource</a></div>`).join('')}</details>`;
+ $('#nav').innerHTML=h;$('#nav').onclick=e=>{const t=e.target.closest('.it[data-i]');if(t)go(+t.dataset.i)};
+ $('#q').oninput=e=>{const v=e.target.value.toLowerCase();document.querySelectorAll('.it[data-i]').forEach(n=>n.style.display=flat[n.dataset.i].name.toLowerCase().includes(v)?'':'none');if(v)document.querySelectorAll('details').forEach(d=>d.open=true)};
+ $('#hm').onclick=()=>document.body.classList.toggle('nav');home()});
+function prog(){let n=0;flat.forEach(i=>{if(done[i.id])n++});$('#pb').style.width=100*n/flat.length+'%';$('#pt').textContent=`${n}/${flat.length} complete`;
+ document.querySelectorAll('.it[data-i]').forEach(e=>e.classList.toggle('done',!!done[flat[e.dataset.i].id]));
+ document.querySelectorAll('details[data-m]').forEach(d=>{const its=flat.filter(i=>i.mod==d.dataset.m);d.querySelector('.mp').textContent=`${its.filter(i=>done[i.id]).length}/${its.length} complete`})}
+function srt2vtt(t){return 'WEBVTT\n\n'+t.replace(/\r/g,'').replace(/(\d+:\d+:\d+),(\d+)/g,'$1.$2')}
+function parseSrt(t){return t.replace(/\r/g,'').trim().split(/\n\n+/).map(b=>{const l=b.split('\n'),m=(l[1]||'').match(/(\d+):(\d+):(\d+)[,.](\d+)/);return m?{t:+m[1]*3600+ +m[2]*60+ +m[3],x:l.slice(2).join(' ')}:null}).filter(Boolean)}
+function home(){cur=-1;document.body.classList.remove('nav');document.querySelectorAll('.it.on').forEach(e=>e.classList.remove('on'));
+ const last=flat[+localStorage.last]?+localStorage.last:-1,nx=flat.findIndex(i=>!done[i.id]);
+ const target=last>=0&&!done[flat[last].id]?last:(nx>=0?nx:0),started=Object.keys(done).length||last>=0;
+ $('#view').innerHTML=`<div class="hero"><h1>${esc(man.title)}</h1><small>${man.modules.length} modules &middot; ${flat.filter(i=>i.type!='Quiz').length} lectures &middot; ${flat.filter(i=>i.type=='Quiz').length} quizzes</small></div>
+ <div class="ctl"><button class="p" onclick="go(${target})">${started?'Resume: '+esc(flat[target].name):'Start course'}</button></div>
+ <div class="grid">${man.modules.map((m,mi)=>{const its=flat.filter(i=>i.mod==mi),n=its.filter(i=>done[i.id]).length;return `<div class="card" onclick="go(${its[0].idx})"><b>${mi+1}. ${esc(m.name)}</b><small>${its.length} items &middot; ${n} complete</small><div class="bar"><i style="width:${100*n/its.length}%"></i></div></div>`}).join('')}</div>`;prog()}
+async function go(i){document.body.classList.remove('nav');cur=i;const it=flat[i];localStorage.last=i;
+ document.querySelectorAll('.it.on').forEach(e=>e.classList.remove('on'));const el=document.querySelector(`.it[data-i="${i}"]`);el.classList.add('on');
+ el.closest('details').open=true;el.scrollIntoView({block:'nearest'});
+ const nav=`<div class="ctl"><button ${i?'':'disabled'} onclick="go(${i-1})">&larr; Previous</button><button class="p" ${flat[i+1]?'':'disabled'} onclick="go(${i+1})">Next &rarr;</button><button onclick="mark()">${done[it.id]?'Mark incomplete':'Mark complete'}</button>`;
+ if(it.type=='Quiz'){$('#view').innerHTML=crumb(it)+`<h2>${esc(it.name)}</h2>`+nav+`</div><iframe src="${M+enc(it.html)}"></iframe>`;prog();return}
+ $('#view').innerHTML=`<video id="v" controls autoplay src="${M+enc(it.video)}"></video>${crumb(it)}<h2>${esc(it.name)}</h2>`+nav+`<select id="sp">${[.75,1,1.25,1.5,1.75,2].map(s=>`<option ${s==(+localStorage.rate||1)?'selected':''}>${s}</option>`).join('')}</select></div><h3>Transcript</h3><div id="tr">Loading...</div>`;
+ const v=$('#v');v.playbackRate=+localStorage.rate||1;$('#sp').onchange=e=>{v.playbackRate=localStorage.rate=+e.target.value};
+ v.onloadedmetadata=()=>{if(pos[it.id]&&pos[it.id]<v.duration-5)v.currentTime=pos[it.id]};
+ v.ontimeupdate=()=>{pos[it.id]=v.currentTime;if(Math.round(v.currentTime)%5==0)save();if(v.duration&&v.currentTime/v.duration>.9&&!done[it.id]){done[it.id]=1;save();prog()}};
+ v.onended=()=>{done[it.id]=1;save();prog();if(flat[i+1])go(i+1)};
+ if(it.srt){const t=await (await fetch(M+enc(it.srt))).text();if(cur!=i)return;
+  const tk=document.createElement('track');tk.kind='subtitles';tk.label='English';tk.srclang='en';tk.default=true;tk.src=URL.createObjectURL(new Blob([srt2vtt(t)],{type:'text/vtt'}));v.appendChild(tk);
+  const c=parseSrt(t);$('#tr').innerHTML=c.map((x,k)=>`<div data-t="${x.t}"><span>${Math.floor(x.t/60)}:${String(x.t%60).padStart(2,'0')}</span>${esc(x.x)}</div>`).join('');
+  $('#tr').onclick=e=>{const n=e.target.closest('[data-t]');if(n){v.currentTime=+n.dataset.t;v.play()}};
+  let act=-1;v.addEventListener('timeupdate',()=>{const k=c.findLastIndex(x=>x.t<=v.currentTime);if(k!=act){act=k;const T=$('#tr');T.querySelector('.on')?.classList.remove('on');const n=T.children[k];if(n){n.classList.add('on');T.scrollTop=n.offsetTop-T.offsetTop-60}}})}
+ else $('#tr').textContent='No transcript.';
+ prog()}
+function crumb(it){return `<div class="crumb">${esc(it.modName)} &rsaquo; ${esc(it.lesson)}</div>`}
+function mark(){if(cur<0)return;const it=flat[cur];done[it.id]=!done[it.id];save();go(cur)}
+document.addEventListener('keydown',e=>{const v=$('#v');if(!v||/INPUT|SELECT|BUTTON/.test(e.target.tagName))return;
+ if(e.key==' '){e.preventDefault();v.paused?v.play():v.pause()}else if(e.key=='ArrowRight')v.currentTime+=5;else if(e.key=='ArrowLeft')v.currentTime-=5;else if(e.key=='n')go(Math.min(cur+1,flat.length-1))});
+</script></body></html>
