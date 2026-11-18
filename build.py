@@ -1,8 +1,11 @@
-import json, os, sys, re
-root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-slug = 'packt-data-governance-ai-governance-the-complete-guide-i0wqi'
-cdir = os.path.join(root, slug)
-d = json.load(open(os.path.join(cdir, '.cache', 'crawl.json'), encoding='utf8'))
+"""Scan courses/<slug>/ folders (as produced by dl_coursera) and write
+.generated/courses.json plus .generated/<slug>.json manifests."""
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+COURSES = os.path.join(HERE, 'courses')
+GEN = os.path.join(HERE, '.generated')
+
 
 def find(parent, i):
     pre = f'{i:02d}@'
@@ -11,38 +14,76 @@ def find(parent, i):
             return n
     return None
 
-def rel(*p): return '/'.join(p)
 
-out = {'title': d['name'], 'modules': []}
-miss = 0
-vid = 0
-for mi, m in enumerate(d['modules'], 1):
-    mn = find(cdir, mi)
-    mod = {'name': m['name'], 'lessons': []}
-    for li, l in enumerate(m['lessons'], 1):
-        ln = find(os.path.join(cdir, mn), li)
-        les = {'name': l['name'], 'items': []}
-        for ii, it in enumerate(l['items'], 1):
-            idir = find(os.path.join(cdir, mn, ln), ii)
-            base = os.path.join(cdir, mn, ln, idir)
-            r = rel(mn, ln, idir)
-            files = os.listdir(base)
-            e = {'name': it['name'], 'type': it['type'], 'id': it['id']}
-            if it['type'] == 'Lecture':
-                mp4 = [f for f in files if f.endswith('.mp4')]
-                srt = [f for f in files if f.endswith('.srt')]
-                if not mp4: miss += 1; continue
-                e['video'] = rel(r, mp4[0]); vid += 1
-                if srt: e['srt'] = rel(r, srt[0])
-                e['other'] = [rel(r, f) for f in files if not f.endswith(('.mp4', '.srt'))]
-            else:
-                h = [f for f in files if f.endswith('.html')]
-                if not h: miss += 1; continue
-                e['html'] = rel(r, h[0])
-            les['items'].append(e)
-        mod['lessons'].append(les)
-    out['modules'].append(mod)
-if os.path.exists(os.path.join(cdir, 'references')):
-    out['references'] = ['references/' + f for f in os.listdir(os.path.join(cdir, 'references'))]
-json.dump(out, open(os.path.join(root, 'site', 'manifest.json'), 'w', encoding='utf8'), indent=1)
-print('videos', vid, 'missing', miss)
+def build_course(slug):
+    cdir = os.path.join(COURSES, slug)
+    crawl = os.path.join(cdir, '.cache', 'crawl.json')
+    if not os.path.isfile(crawl):
+        return None
+    d = json.load(open(crawl, encoding='utf8'))
+    out = {'slug': slug, 'title': d.get('name', slug), 'modules': []}
+    lectures = quizzes = 0
+    for mi, m in enumerate(d.get('modules', []), 1):
+        mn = find(cdir, mi)
+        if not mn:
+            continue
+        mod = {'name': m['name'], 'lessons': []}
+        for li, l in enumerate(m.get('lessons', []), 1):
+            ln = find(os.path.join(cdir, mn), li)
+            if not ln:
+                continue
+            les = {'name': l['name'], 'items': []}
+            for ii, it in enumerate(l.get('items', []), 1):
+                idir = find(os.path.join(cdir, mn, ln), ii)
+                if not idir:
+                    continue
+                files = os.listdir(os.path.join(cdir, mn, ln, idir))
+                r = '/'.join((mn, ln, idir))
+                e = {'name': it['name'], 'type': it['type'], 'id': it['id']}
+                if it['type'] == 'Lecture':
+                    mp4 = [f for f in files if f.endswith('.mp4')]
+                    if not mp4:
+                        continue
+                    e['video'] = r + '/' + mp4[0]
+                    srt = [f for f in files if f.endswith('.srt')]
+                    if srt:
+                        e['srt'] = r + '/' + srt[0]
+                    lectures += 1
+                else:
+                    h = [f for f in files if f.endswith('.html')]
+                    if not h:
+                        continue
+                    e['html'] = r + '/' + h[0]
+                    quizzes += 1
+                les['items'].append(e)
+            if les['items']:
+                mod['lessons'].append(les)
+        if mod['lessons']:
+            out['modules'].append(mod)
+    ref = os.path.join(cdir, 'references')
+    if os.path.isdir(ref):
+        out['references'] = ['references/' + f for f in sorted(os.listdir(ref))]
+    out['lectures'], out['quizzes'] = lectures, quizzes
+    return out
+
+
+def build():
+    os.makedirs(GEN, exist_ok=True)
+    index = []
+    if os.path.isdir(COURSES):
+        for slug in sorted(os.listdir(COURSES)):
+            if not os.path.isdir(os.path.join(COURSES, slug)):
+                continue
+            c = build_course(slug)
+            if not c:
+                continue
+            json.dump(c, open(os.path.join(GEN, slug + '.json'), 'w', encoding='utf8'))
+            index.append({'slug': slug, 'title': c['title'], 'modules': len(c['modules']),
+                          'lectures': c['lectures'], 'quizzes': c['quizzes']})
+    json.dump(index, open(os.path.join(GEN, 'courses.json'), 'w', encoding='utf8'), indent=1)
+    return index
+
+
+if __name__ == '__main__':
+    for c in build():
+        print(f"{c['slug']}: {c['modules']} modules, {c['lectures']} lectures, {c['quizzes']} quizzes")

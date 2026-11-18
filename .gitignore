@@ -1,4 +1,8 @@
 __pycache__/
 *.pyc
 cookies*.txt
-.cache/
+.generated/
+
+# course data stays local: keep the course-slug folders, ignore their contents
+courses/*/*
+!courses/*/.gitkeep

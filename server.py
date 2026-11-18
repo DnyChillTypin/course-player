@@ -1,17 +1,27 @@
 import os, sys, mimetypes, urllib.parse, re
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 HERE = os.path.dirname(os.path.abspath(__file__))
-COURSE = os.path.join(os.path.dirname(HERE), 'packt-data-governance-ai-governance-the-complete-guide-i0wqi')
+sys.path.insert(0, HERE)  # needed under `python -I`
+import build
+COURSES = os.path.join(HERE, 'courses')
+GEN = os.path.join(HERE, '.generated')
+STATIC = {'/': 'index.html', '/index.html': 'index.html'}
 
 
 class H(SimpleHTTPRequestHandler):
-    def translate_path(self, path):
-        p = urllib.parse.unquote(urllib.parse.urlparse(path).path)
-        base, p = (COURSE, p[7:]) if p.startswith('/media/') else (HERE, p)
-        full = os.path.normpath(os.path.join(base, p.lstrip('/')))
-        if not full.startswith(base):
-            return os.path.join(HERE, '404')
-        return full
+    def resolve(self):
+        p = urllib.parse.unquote(urllib.parse.urlparse(self.path).path)
+        if p in STATIC:
+            return os.path.join(HERE, STATIC[p])
+        if p == '/api/rescan':
+            build.build()
+            return os.path.join(GEN, 'courses.json')
+        for prefix, base in (('/media/', COURSES), ('/data/', GEN)):
+            if p.startswith(prefix):
+                full = os.path.normpath(os.path.join(base, p[len(prefix):]))
+                if full.startswith(os.path.normpath(base) + os.sep):
+                    return full
+        return None
 
     def do_GET(self):
         self.serve(True)
@@ -20,10 +30,8 @@ class H(SimpleHTTPRequestHandler):
         self.serve(False)
 
     def serve(self, body):
-        path = self.translate_path(self.path)
-        if os.path.isdir(path):
-            path = os.path.join(path, 'index.html')
-        if not os.path.isfile(path) or os.path.basename(path) in ('build.py', 'server.py'):
+        path = self.resolve()
+        if not path or not os.path.isfile(path):
             self.send_error(404)
             return
         size = os.path.getsize(path)
@@ -47,6 +55,8 @@ class H(SimpleHTTPRequestHandler):
         self.send_header('Content-Type', ctype)
         self.send_header('Accept-Ranges', 'bytes')
         self.send_header('Content-Length', str(end - start + 1))
+        if path.startswith(GEN):
+            self.send_header('Cache-Control', 'no-store')
         if code == 206:
             self.send_header('Content-Range', f'bytes {start}-{end}/{size}')
         self.end_headers()
@@ -71,5 +81,8 @@ class H(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
-    print(f'Serving on http://127.0.0.1:{port}')
+    os.makedirs(COURSES, exist_ok=True)
+    found = build.build()
+    print(f'Found {len(found)} course(s): ' + ', '.join(c['slug'] for c in found))
+    print(f'Serving on http://127.0.0.1:{port}  (drop new courses into courses/ and refresh the library)')
     ThreadingHTTPServer(('127.0.0.1', port), H).serve_forever()
