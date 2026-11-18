@@ -72,9 +72,12 @@ async function openCourse(s){
    h+=`<div class="it" data-i="${it.idx}"><span class="ck"></span><span>${esc(it.name)}<br><span class="ic">${it.type=='Quiz'?'Quiz':'Video'}</span></span></div>`})});h+='</details>'});
  if(m.references&&m.references.length)h+=`<details><summary>Resources</summary>${m.references.map(r=>`<div class="it"><a href="${media(r)}" target="_blank">${esc(r.split('/').pop().replace(/^\d+@/,'').replace(/\.html$/,'').replace(/-/g,' '))}</a></div>`).join('')}</details>`;
  $('#nav').innerHTML=h;
- // migrate progress saved by the single-course version of this app
- if(!localStorage[pkey(s)]&&localStorage.done&&!localStorage.migrated){try{const od=JSON.parse(localStorage.done),ids=new Set(flat.map(i=>i.id));
-  if(Object.keys(od).length&&Object.keys(od).every(k=>ids.has(k))){P.done=od;P.pos=JSON.parse(localStorage.pos||'{}');const l=+localStorage.last;P.last=Number.isFinite(l)?l:-1;localStorage.migrated=s;save()}}catch(e){}}}
+ // adopt progress saved under an old folder name (or by the single-course version of this app)
+ if(!localStorage[pkey(s)]){try{const ids=new Set(flat.map(i=>i.id)),known=new Set((await getJSON('/data/courses.json')).map(c=>c.slug));
+  const fits=d=>{const k=Object.keys(d||{});return k.length&&k.every(x=>ids.has(x))};
+  const old=Object.keys(localStorage).filter(k=>k.startsWith('p:')&&!known.has(k.slice(2))&&fits(JSON.parse(localStorage[k]).done))[0];
+  if(old){localStorage[pkey(s)]=localStorage[old];delete localStorage[old];P=loadP(s)}
+  else if(localStorage.done&&!localStorage.migrated&&fits(JSON.parse(localStorage.done))){P.done=JSON.parse(localStorage.done);P.pos=JSON.parse(localStorage.pos||'{}');const l=+localStorage.last;P.last=Number.isFinite(l)?l:-1;localStorage.migrated=s;save()}}catch(e){}}}
 $('#nav').onclick=e=>{const t=e.target.closest('.it[data-i]');if(t)location.hash=`#/${encodeURIComponent(slug)}/${t.dataset.i}`};
 $('#q').oninput=e=>{const v=e.target.value.toLowerCase();document.querySelectorAll('.it[data-i]').forEach(n=>n.style.display=flat[n.dataset.i].name.toLowerCase().includes(v)?'':'none');if(v)document.querySelectorAll('details').forEach(d=>d.open=true)};
 $('#hm').onclick=()=>document.body.classList.toggle('nav');
